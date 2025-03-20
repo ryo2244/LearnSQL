@@ -25,11 +25,16 @@ docker compose exec sampledb bash
 
 先ほどのコマンドの sampledb 部分は compose.yml に書いたサービス名によって決まるので別リポジトリでは異なるコマンドになる可能性もある。
 
-終了させる処理
+psql コマンド実行後から終了させる処理
 
 ```sh
 psql -U postgres
 exit # psql の終了
+```
+
+Docker コンテナを終了する処理
+
+```sh
 exit # Docker のコンテナから抜ける
 docker compose down
 ```

@@ -1,0 +1,5 @@
+services:
+  sampledb:
+    image: postgres:17.4
+    environment:
+      - POSTGRES_PASSWORD=password
